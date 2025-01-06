@@ -113,19 +113,30 @@ Here is an example linking to https://www.freecodecamp.org:
 <a href="https://freecatphotoapp.com"</a>
 ```
 
-## Step 11
+## Step 11 Link Text
+A link's text must be placed between the opening and closing tags of an anchor (a) element.
 
+Here is an example of a link with the text click here to go to freeCodeCamp.org:
+
+*Example Code*
 ```html
+<a href="https://www.freecodecamp.org">click here to go to freeCodeCamp.org</a>
 ```
 
-## Step 12
+```html
+<a href="https://freecatphotoapp.com">cat photos</a>
+```
+## Step 12 Link Text cont'd
 
 ```html
+See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery
 ```
 
-## Step 13
+## Step 13 Link Text in Paragraph
+Add p tags to turn See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery. into a paragraph.
 
 ```html
+<p>See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery.<p>
 ```
 
 ## Step 14
@@ -133,7 +144,12 @@ Here is an example linking to https://www.freecodecamp.org:
 ```html
 ```
 
+```html
+```
 ## Step 15
+
+```html
+```
 
 ```html
 ```
@@ -143,7 +159,14 @@ Here is an example linking to https://www.freecodecamp.org:
 ```html
 ```
 
+```html
+```
+
 ## Step 17
 
 ```html
 ```
+
+```html
+```
+
