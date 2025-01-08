@@ -1,7 +1,7 @@
 # Learn HTML by Building a Cat Photo App
 
 ## Step 1 HTML Elements
-HTML elements have opening tags like <h1> and closing tags like </h1>. The text an element will display goes between its opening and closing tags.
+HTML elements have opening tags like ``<h1>`` and closing tags like ``</h1>``. The text an element will display goes between its opening and closing tags.
 
 ```html
 <h1>CatPhotoApp</h1>
@@ -26,7 +26,8 @@ The p element is used to create a paragraph of text on websites.
 Commenting allows you to leave messages without affecting the browser display. It also allows you to make code inactive. A comment in HTML starts with <!--, contains any number of lines of text, and ends with -->.
 
 Here is an example of a comment with the TODO: Remove h1:
-Example Code
+
+*Example Code*
 
 <!-- TODO: Remove h1 -->
 
@@ -139,34 +140,41 @@ Add p tags to turn See more <a href="https://freecatphotoapp.com">cat photos</a>
 <p>See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery.<p>
 ```
 
-## Step 14
+## Step 14 Anchor Element
+
+Turn the existing text cute cats into an anchor element that links to https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg
 
 ```html
+<p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
 ```
+
+## Step 15 Open Link in New Tab
+
+To open links in a new tab, you can use the `target` attribute on the anchor (`a`) element.
+
+The `target` attribute specifies where to open the linked document. `target="_blank"` opens the linked document in a new tab or window.
+
+Here is the basic syntax for an `a` element with a `target` attribute:
+
+*Example Code*
 
 ```html
+<a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>
 ```
-## Step 15
+
+Add a `target` attribute with the value `_blank` to the anchor (`a`) element's opening tag, so that the link opens in a new tab.
 
 ```html
+<p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery.</p>
 ```
+
+## Step 16 Remove Comment
+
+Now that you have added the link you can remove the comment.
 
 ```html
+      <!-- TODO: Add link to cat photos -->
+<p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+
+<p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
 ```
-
-## Step 16
-
-```html
-```
-
-```html
-```
-
-## Step 17
-
-```html
-```
-
-```html
-```
-
