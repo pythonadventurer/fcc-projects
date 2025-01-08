@@ -318,7 +318,30 @@ To place emphasis on a specific word or phrase, you can use the em element.
  <h3>Top 3 things cats hate:</h3>
 ```
 
+## Step 29 Ordered List
 
+```html
+  <h3>Top 3 things cats hate:</h3>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+```
+
+## Step 30 Add Another Figure Element
+
+```html
+        <figure>
+        </figure>
+```
+
+## Step 31 Add Image
+```html
+  <figure>
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg">
+  </figure>
+```
 
 ## Step 
 
