@@ -178,3 +178,150 @@ Now that you have added the link you can remove the comment.
 
 <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
 ```
+
+## Step 17 Turn Image into a Link
+
+In previous steps you used an anchor element to turn text into a link. Other types of content can also be turned into a link by wrapping it in anchor tags.
+
+Here is an example of turning an image into a link:
+
+*Example code:*
+
+<a href="example-link">
+  <img src="image-link.jpg" alt="A photo of a cat.">
+</a>
+
+```html
+      <a href="https://freecatphotoapp.com">
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+      </a>
+```
+
+## Step 18 The section element
+Before adding any new content, you should make use of a section element to separate the cat photos content from the future content.
+
+The section element is used to define sections in a document, such as chapters, headers, footers, or any other sections of the document. It is a semantic element that helps with SEO and accessibility.
+
+```html
+    <main>
+
+      <h1>CatPhotoApp</h1>
+      
+      <section>
+      <h2>Cat Photos</h2>
+      <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+      <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+      <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+    </main>
+```
+
+## Step 19 Add a new section
+
+```html
+      <section>
+        <h2>Cat Photos</h2>
+        <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+    <section>
+      </section> 
+```
+
+## Step 20 Add h2 to new section
+
+```html
+      <section>
+        <h2>Cat Lists</h2>
+      </section>
+```
+
+## Step 21 Implied subsection
+
+When you add a lower rank heading element to the page, it's implied that you're starting a new subsection.
+
+After the last h2 element of the second section element, add an h3 element with this text:
+
+Things cats love:
+
+```html
+     <section>
+        <h2>Cat Lists</h2>
+          <h3>Things cats love:</h3>
+      </section>
+```
+
+## Step 22 Unordered Lists
+
+To create an unordered list of items, you can use the ul element.
+
+After the h3 element with the Things cats love: text, add an unordered list (ul) element. Note that nothing will be displayed at this point.
+
+```html
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul></ul>
+```
+
+## Step 23 The list item element
+
+```html
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+          
+        </ul>
+```
+
+## Step 24 Add an image and alt attribute
+
+```html
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+```
+
+## Step 25 The figure element
+The figure element represents self-contained content and will allow you to associate an image with a caption.
+
+```html
+       <figure> <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+      </figure>
+```
+
+## Step 26 Figure caption
+A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element.
+
+```html
+  <figure>
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+    <figcaption>Cats love lasagna.</figcaption>  
+  </figure>
+```
+
+## Step 27 Emphasis
+To place emphasis on a specific word or phrase, you can use the em element.
+
+```html
+<figcaption>Cats <em>love</em> lasagna.</figcaption>
+
+```
+
+## Step 28 Add h3 element
+
+```html
+ <h3>Top 3 things cats hate:</h3>
+```
+
+
+
+## Step 
+
+```html
+
+```
