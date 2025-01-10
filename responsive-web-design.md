@@ -441,9 +441,7 @@ Submit
 </button>
 ```
 
-## Step 45
-
-
+## Step 45 Add Button Type
 Even though you added your button below the text input, they appear next to each other on the page. That's because both input and button elements are ``inline elements``, which don't appear on new lines.
 
 The button you added will submit the form by default. However, relying on default behavior may cause confusion. Add the type attribute with the value submit to the button to make it clear that it is a submit button.
@@ -453,9 +451,23 @@ The button you added will submit the form by default. However, relying on defaul
 <button type="submit">Submit</button>
 ```
 
+## Step 46 Radio Buttons
+You can use radio buttons for questions where you want only one answer out of multiple options
 
+```html
+<input type="radio">Indoor
+<input type="text" name="catphotourl" placeholder="cat photo URL" required>
 
+```
 
+## Step 47 Label Elements
+label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers).
+
+```html
+<label>
+  <input type="radio"> Indoor
+</label>
+```
 
 ## Step 
  
