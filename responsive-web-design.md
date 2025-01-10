@@ -343,8 +343,123 @@ To place emphasis on a specific word or phrase, you can use the em element.
   </figure>
 ```
 
-## Step 
+## Step 32 Add Alt Attribte
 
+```html
+<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+```
+
+## Step 33 Add figcaption
+
+```html
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats hate other cats.</figcaption>
+        </figure>
+```
+
+## Step 34 The strong Element
+
+```html
+  <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+```
+
+## Step 35 Add a 3rd Section
+
+```html
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+        </figure>
+      </section>
+      <section>
+     </section>
+```
+
+## Step 36 Add h2 element
+
+```html
+      <section>
+        <h2>Cat Form</h2>
+     </section>
+```
+
+## Step 37 Add form Element
+
+```html
+        <h2>Cat Form</h2>
+        <form>
+          </form>
+```
+
+## Step 38 Add Action Attribute to Form
+ 
+```html
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+        </form>
+```
+
+## Step 39 Add input Element
+ 
+```html
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+  <input>
+
+</form>
+```
+
+## Step 40 Add input type attribute
+ 
+```html
+<input type="text" name="catphotourl">
+```
+
+## Step 41 Add input name attribute
+ 
+```html
+<input type="text" name="catphotourl">
+```
+
+## Step 42 Add placeholder text
+ 
+```html
+<input type="text" name="catphotourl" placeholder="cat photo URL">
+```
+
+## Step 43 Make Input Required
+
+```html
+<input required type="text" name="catphotourl" placeholder="cat photo URL">
+```
+
+## Step 44 Add a Button Element
+ 
+```html
+<input type="text" name="catphotourl" placeholder="cat photo URL" required>
+<button>
+Submit  
+</button>
+```
+
+## Step 45
+
+
+Even though you added your button below the text input, they appear next to each other on the page. That's because both input and button elements are ``inline elements``, which don't appear on new lines.
+
+The button you added will submit the form by default. However, relying on default behavior may cause confusion. Add the type attribute with the value submit to the button to make it clear that it is a submit button.
+
+ 
+```html
+<button type="submit">Submit</button>
+```
+
+
+
+
+
+## Step 
+ 
 ```html
 
 ```
+
