@@ -7,7 +7,7 @@ HTML elements have opening tags like ``<h1>`` and closing tags like ``</h1>``. T
 <h1>CatPhotoApp</h1>
 ```
 
-## Step 2 Heading Helements
+## Step 2 Heading elements
 The h1 through h6 heading elements are used to signify the importance of content below them. The lower the number, the higher the importance, so h2 elements have less importance than h1 elements.
 
 ```html
@@ -469,9 +469,306 @@ label elements are used to help associate the text for an input element with the
 </label>
 ```
 
-## Step 
+## Step 48 The id Attribute
+The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page.
  
 ```html
+<label><input type="radio" id="indoor"> Indoor</label>
+```
 
+## Step 49 Add Radio Button
+Create another radio button below the first one. Nest it inside a label element with Outdoor as the label text. Give the radio button an id attribute with outdoor as the value.
+ 
+```html
+<label><input id="indoor" type="radio"> Indoor</label>
+<label><input id="outdoor" type="radio"> Outdoor</label>
+```
+
+## Step 50 Add name element to radio buttons
+Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value .
+
+```html
+<label><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+<label><input id="outdoor" type="radio"name="indoor-outdoor"> Outdoor</label>
+```
+
+
+## Step 51 Add value attributes to radio buttons
+If you select the Indoor radio button and submit the form, the form data for the button is based on its name and value attributes. Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons.
+
+Add a value attribute to both radio buttons. For convenience, set the button's value attribute to the same value as its id attribute.
+
+
+```html
+<label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+<label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+```
+
+
+## Step 52 The fieldset element
+The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.
+
+Nest the Indoor and Outdoor radio buttons within a fieldset element, and don't forget to indent the radio buttons.
+
+
+```html
+<fieldset>
+          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+</fieldset>  
+
+```
+
+## Step 53 legend Element
+The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.
+
+Add a legend element with the text Is your cat an indoor or outdoor cat? above both of the radio buttons.
+
+ 
+```html
+<fieldset>
+    <legend>Is your cat an indoor or outdoor cat?</legend>
+    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+</fieldset>
+```
+
+## Step 54 Add a fieldset
+Next, you are going to add some new form input elements, so add another fieldset element directly below the current fieldset element. 
+
+```html
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+          </fieldset>
+```
+
+## Step 55 Add a legend
+Add a legend element with the text What's your cat's personality? inside the second fieldset element.
+
+```html
+<fieldset>
+<legend>What's your cat's personality?</legend>
+</fieldset>
+```
+
+## Step 56 Checkboxes
+Forms commonly use checkboxes for questions that may have more than one answer. The input element with a type attribute set to checkbox creates a checkbox.
+
+Under the legend element you just added, add an input with its type attribute set to checkbox and its text set to:
+
+Loving
+
+
+```html
+            <legend>What's your cat's personality?</legend>
+            <input type="checkbox"> Loving
+```
+
+## Step 57 Add id attribute
+Add an id attribute with the value loving to the checkbox input.
+ 
+```html
+<input type="checkbox" id="loving"> Loving
+```
+
+## Step 58 Label with "for" attribute
+There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute.
+
+Given an input element as below:
+```html
+<input id="breakfast" type="radio" name="meal" value="breakfast">
+
+```
+
+Associate the text `Loving` with the checkbox by nesting only the text `Loving` in a `label` element and giving it an appropriate `for` attribute.
+
+```html
+            <input id="loving" type="checkbox">
+            <label for="loving">Loving</label>
+```
+
+## Step 59 Add name attribute
+ 
+```html
+Add the name attribute with the value personality to the checkbox input element.
+
+While you won't notice this in the browser, doing this makes it easier for a server to process your web form, especially when there are multiple checkboxes.
+```
+ 
+```html
+<input id="loving" type="checkbox" name="personality"> <label for="loving">Loving</label>
+```
+
+## Step 60 Add checkbox
+Add another checkbox after the one you just added. The `id` attribute value should be `lazy` and the `name` attribute value should be the same as the last checkbox.
+
+Also add a `label` element to the right of the new checkbox with the text `Lazy`. Make sure to associate the `label` element with the new checkbox using the `for` attribute.
+
+```html
+<input id="loving" type="checkbox" name="personality"> <label for="loving">Loving</label>
+
+<input id="lazy" type="checkbox" name="personality"> <label for="lazy">Lazy</label>
+```
+
+## Step 61 Final checkbox
+Add a final checkbox after the previous one with an `id` attribute value of `energetic`. The `name` attribute should be the same as the previous checkbox.
+
+Also add a `label` element to the right of the new checkbox with text `Energetic`. Make sure to associate the `label` element with the new checkbox.
+
+
+```html
+<input id="loving" type="checkbox" name="personality"> <label for="loving">Loving</label>
+
+<input id="lazy" type="checkbox" name="personality"> <label for="lazy">Lazy</label>
+
+<input id="energetic" type="checkbox" name="personality"> <label for="energetic">Energetic</label>
+```
+
+
+## Step 62 Add additional value attributes
+Like radio buttons, form data for selected checkboxes are `name` / `value` attribute pairs. While the `value` attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
+
+Add a `value` attribute to each checkbox. For convenience, set each checkbox's `value` attribute to the same value as its `id` attribute.
+
+```html
+<fieldset>
+	<legend>Is your cat an indoor or outdoor cat?</legend>
+	<label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+	<label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+</fieldset>
+<fieldset>
+	<legend>What's your cat's personality?</legend>
+	<input id="loving" type="checkbox" name="personality" value="loving"> <label for="loving">Loving</label>
+	<input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+	<input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+</fieldset>
+```
+
+
+## Step 63 Set checked attribute
+In order to make a checkbox checked or radio button selected by default, you need to add the `checked` attribute to it.
+
+Here is an example of a radio button with the `checked` attribute:
+
+```html
+<input checked type="radio" name="meal" value="breakfast"> Breakfast
+```
+
+There's no need to set a value to the checked attribute. Instead, just add the word checked to the input element, making sure there is space between it and other attributes.
+
+Make the first radio button and the first checkbox selected by default.
+
+```html
+<fieldset>
+	<legend>Is your cat an indoor or outdoor cat?</legend>
+	<label><input checked id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+	<label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+</fieldset>
+<fieldset>
+	<legend>What's your cat's personality?</legend>
+	<input checked id="loving" type="checkbox" name="personality" value="loving"> <label for="loving">Loving</label>
+	<input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+	<input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+</fieldset>
+```
+
+
+## Step 64 The footer element
+The `footer` element is used to define a footer for a document or section. A footer typically contains information about the author of the document, copyright data, links to terms of use, contact information, and more.
+
+After the `main` element, add a `footer` element.
+
+```html
+   </main>
+  <footer>
+    </footer>
+  </body>
+```
+
+
+## Step 65 Final p element
+Nest a `p` element with the text `No Copyright - freeCodeCamp.org` within the `footer` element.
+
+```html
+    <footer>
+      <p>No Copyright - freeCodeCamp.org</p>
+    </footer>
+```
+
+## Step 66 - Link
+Turn the existing `freeCodeCamp.org` text into a link by enclosing it in an anchor (`a`) element. The `href` attribute should be set to `https://www.freecodecamp.org`.
+
+```html
+<p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+```
+
+## Step 67 - Add head element
+Notice that everything you've added to the page so far is inside the `body` element. All page content elements that should be rendered to the page go inside the `body` element. However, other important information goes inside the `head` element.
+
+The `head` element is used to contain metadata about the document, such as its title, links to stylesheets, and scripts. Metadata is information about the page that isn't displayed directly on the page.
+
+Add a `head` element above the `body` element.
+
+
+```html
+<html>
+  <head></head>
+  <body>
+```
+
+## Step 68 - title element
+The `title` element determines what browsers show in the title bar or tab for the page.
+
+Add a `title` element within the `head` element using the text below:
+
+`CatPhotoApp`
+
+```html
+<head>
+	<title>CatPhotoApp</title>
+  </head>
+```
+
+## Step 69 Add lang attribute
+Notice that the entire contents of the page are nested within an `html` element. The `html` element is the root element of an HTML page and wraps all content on the page.
+
+You can also specify the language of your page by adding the `lang` attribute to the `html` element.
+
+Add the `lang` attribute with the value `en` to the opening `html` tag to specify that the language of the page is English.
+
+```html
+<html lang="en">
+```
+
+## Step 70 Add doctype
+
+All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
+
+<!DOCTYPE html> tells browsers that the document is an HTML5 document which is the latest version of HTML.
+
+Add this declaration as the first line of the code.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+```
+
+## Step 71 meta elements
+Inside the `head` element, nest a `meta` element with an attribute named `charset`. Set to the value to `utf-8` which tells the browser how to encode characters for the page.
+
+Note that the `meta` element is a void element.
+
+With that last change, you have completed the Cat Photo App project. Congratulations!
+
+
+```html
+<head>
+    <meta charset="utf-8">
+    <title>CatPhotoApp</title>
+  </head
 ```
 
