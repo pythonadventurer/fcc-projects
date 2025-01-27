@@ -20,3 +20,6 @@ git remote set-url --add --push origin https://github.com/pythonadventurer/fcc-p
 
 - Added ssh keys to C:\Users\robtf\.ssh
 
+- Was able to push to BOTH GitHub and CPanel, using only the SSH passcode when prompted.
+
+
