@@ -51,8 +51,19 @@ Start by rewriting the styles you have created into the styles.css file. Make su
 Now that you have the CSS in the styles.css file, go ahead and remove the style element and all its content. Once it is removed, the text that was centered will shift back to the left.
 
 ## Step 16
+Now you need to link the styles.css file, so the styles will be applied again. Inside the head element, add a link element. Give it a rel attribute with the value of "stylesheet" and an href attribute with the value of "styles.css".
+
 ## Step 17
+For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute.
+
+Add the following within the head element:
+Example Code
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 ## Step 18
+The text is centered again so the link to the CSS file is working. Add another style to the file that changes the background-color property to brown for the body element.
+
 ## Step 19
 ## Step 20
 ## Step 21
