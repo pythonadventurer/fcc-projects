@@ -2,8 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/bluebykk/public_html/fcc-projects
-    = export INDEXPATH=/home/bluebykk/public_html
+    - export INDEXPATH=/home/bluebykk/public_html
     - /bin/cp -R catphotoapp $DEPLOYPATH
     - /bin/cp -R cafe-menu $DEPLOYPATH  
-    - /bin/cp -R index.html $INDEXPATH
+    - /bin/cp index.html $INDEXPATH
 
