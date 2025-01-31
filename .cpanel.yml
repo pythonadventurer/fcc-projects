@@ -5,5 +5,5 @@ deployment:
     = export INDEXPATH=/home/bluebykk/public_html
     - /bin/cp -R catphotoapp $DEPLOYPATH
     - /bin/cp -R cafe-menu $DEPLOYPATH  
-    - /bin/cp index.html $INDEXPATH
-    
+    - /bin/cp -R index.html $INDEXPATH
+
