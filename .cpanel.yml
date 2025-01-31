@@ -3,4 +3,4 @@ deployment:
   tasks:
   - export DEPLOYPATH=/home/bluebykk/public_html/fcc-projects
   - /bin/cp -R cafe-menu $DEPLOYPATH
-
+  - /bin/cp index.html $DEPLOYPATH
